@@ -7,7 +7,6 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - name: kobiton
-      run: curl -L https://get.rvm.io | bash -s stable
+
     - name: kobiton2
       run: ruby xcuitest.rb
