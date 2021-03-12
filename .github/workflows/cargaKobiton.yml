@@ -1,0 +1,16 @@
+name: cargaKobiton
+
+on: [push]
+
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Kobiton
+      runs: 
+        using: 'node12'
+        main: 'xcuitest.rb'
