@@ -1,0 +1,12 @@
+name: jsKobiton
+
+on:
+  [ push ]
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: kobiton2
+      run: node xcuitest.js
