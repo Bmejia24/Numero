@@ -7,6 +7,9 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
+    
+    - name: install
+    - run: npm install
 
     - name: kobiton2
       run: node xcuitest.js
